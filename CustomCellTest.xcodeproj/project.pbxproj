@@ -21,6 +21,14 @@
 		F81D5532187BEA1C0036AFA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81D5514187BEA1C0036AFA8 /* UIKit.framework */; };
 		F81D553A187BEA1C0036AFA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F81D5538187BEA1C0036AFA8 /* InfoPlist.strings */; };
 		F81D553C187BEA1C0036AFA8 /* CustomCellTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F81D553B187BEA1C0036AFA8 /* CustomCellTestTests.m */; };
+		F81D558E187BF6B80036AFA8 /* volleyball.png in Resources */ = {isa = PBXBuildFile; fileRef = F81D5589187BF6B80036AFA8 /* volleyball.png */; };
+		F81D558F187BF6B80036AFA8 /* rugbyball.png in Resources */ = {isa = PBXBuildFile; fileRef = F81D558A187BF6B80036AFA8 /* rugbyball.png */; };
+		F81D5591187BF6B80036AFA8 /* basketball.png in Resources */ = {isa = PBXBuildFile; fileRef = F81D558C187BF6B80036AFA8 /* basketball.png */; };
+		F81D5592187BF6B80036AFA8 /* football.png in Resources */ = {isa = PBXBuildFile; fileRef = F81D558D187BF6B80036AFA8 /* football.png */; };
+		F81D5595187BF7CB0036AFA8 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = F81D5594187BF7CB0036AFA8 /* Product.m */; };
+		F81D5598187BF8930036AFA8 /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F81D5597187BF8930036AFA8 /* ProductCell.m */; };
+		F81D559C187BFE640036AFA8 /* baseball.png in Resources */ = {isa = PBXBuildFile; fileRef = F81D559B187BFE640036AFA8 /* baseball.png */; };
+		F81D55B3187C09CB0036AFA8 /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = F81D55B2187C09CB0036AFA8 /* cart.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,17 @@
 		F81D5537187BEA1C0036AFA8 /* CustomCellTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomCellTestTests-Info.plist"; sourceTree = "<group>"; };
 		F81D5539187BEA1C0036AFA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F81D553B187BEA1C0036AFA8 /* CustomCellTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCellTestTests.m; sourceTree = "<group>"; };
+		F81D5589187BF6B80036AFA8 /* volleyball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volleyball.png; sourceTree = "<group>"; };
+		F81D558A187BF6B80036AFA8 /* rugbyball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rugbyball.png; sourceTree = "<group>"; };
+		F81D558C187BF6B80036AFA8 /* basketball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basketball.png; sourceTree = "<group>"; };
+		F81D558D187BF6B80036AFA8 /* football.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football.png; sourceTree = "<group>"; };
+		F81D5593187BF7CB0036AFA8 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		F81D5594187BF7CB0036AFA8 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		F81D5596187BF8930036AFA8 /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCell.h; sourceTree = "<group>"; };
+		F81D5597187BF8930036AFA8 /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCell.m; sourceTree = "<group>"; };
+		F81D559B187BFE640036AFA8 /* baseball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseball.png; sourceTree = "<group>"; };
+		F81D55AF187C04230036AFA8 /* CartDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CartDelegate.h; sourceTree = "<group>"; };
+		F81D55B2187C09CB0036AFA8 /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +131,12 @@
 		F81D5516187BEA1C0036AFA8 /* CustomCellTest */ = {
 			isa = PBXGroup;
 			children = (
+				F81D55B2187C09CB0036AFA8 /* cart.png */,
+				F81D559B187BFE640036AFA8 /* baseball.png */,
+				F81D5589187BF6B80036AFA8 /* volleyball.png */,
+				F81D558A187BF6B80036AFA8 /* rugbyball.png */,
+				F81D558C187BF6B80036AFA8 /* basketball.png */,
+				F81D558D187BF6B80036AFA8 /* football.png */,
 				F81D551F187BEA1C0036AFA8 /* AppDelegate.h */,
 				F81D5520187BEA1C0036AFA8 /* AppDelegate.m */,
 				F81D5522187BEA1C0036AFA8 /* Main.storyboard */,
@@ -119,6 +144,11 @@
 				F81D5526187BEA1C0036AFA8 /* ViewController.m */,
 				F81D5528187BEA1C0036AFA8 /* Images.xcassets */,
 				F81D5517187BEA1C0036AFA8 /* Supporting Files */,
+				F81D5593187BF7CB0036AFA8 /* Product.h */,
+				F81D5594187BF7CB0036AFA8 /* Product.m */,
+				F81D5596187BF8930036AFA8 /* ProductCell.h */,
+				F81D5597187BF8930036AFA8 /* ProductCell.m */,
+				F81D55AF187C04230036AFA8 /* CartDelegate.h */,
 			);
 			path = CustomCellTest;
 			sourceTree = "<group>";
@@ -230,7 +260,13 @@
 			files = (
 				F81D5529187BEA1C0036AFA8 /* Images.xcassets in Resources */,
 				F81D551B187BEA1C0036AFA8 /* InfoPlist.strings in Resources */,
+				F81D55B3187C09CB0036AFA8 /* cart.png in Resources */,
+				F81D5592187BF6B80036AFA8 /* football.png in Resources */,
+				F81D558F187BF6B80036AFA8 /* rugbyball.png in Resources */,
+				F81D5591187BF6B80036AFA8 /* basketball.png in Resources */,
+				F81D559C187BFE640036AFA8 /* baseball.png in Resources */,
 				F81D5524187BEA1C0036AFA8 /* Main.storyboard in Resources */,
+				F81D558E187BF6B80036AFA8 /* volleyball.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F81D5598187BF8930036AFA8 /* ProductCell.m in Sources */,
 				F81D5527187BEA1C0036AFA8 /* ViewController.m in Sources */,
+				F81D5595187BF7CB0036AFA8 /* Product.m in Sources */,
 				F81D5521187BEA1C0036AFA8 /* AppDelegate.m in Sources */,
 				F81D551D187BEA1C0036AFA8 /* main.m in Sources */,
 			);
@@ -460,6 +498,7 @@
 				F81D5541187BEA1C0036AFA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F81D5542187BEA1C0036AFA8 /* Build configuration list for PBXNativeTarget "CustomCellTestTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +507,7 @@
 				F81D5544187BEA1C0036AFA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
