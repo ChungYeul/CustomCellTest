@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		007A1450187E5BDA00E536CE /* Catalog.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A144F187E5BDA00E536CE /* Catalog.m */; };
+		007A1453187E6F2400E536CE /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A1452187E6F2400E536CE /* Cart.m */; };
+		007A1459187E728200E536CE /* CartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A1458187E728200E536CE /* CartItem.m */; };
+		007A145F187E743E00E536CE /* CartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A145E187E743E00E536CE /* CartCell.m */; };
+		007A1466187E949B00E536CE /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 007A1464187E949B00E536CE /* minus.png */; };
+		007A1467187E949B00E536CE /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 007A1465187E949B00E536CE /* plus.png */; };
 		F81D5511187BEA1C0036AFA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81D5510187BEA1C0036AFA8 /* Foundation.framework */; };
 		F81D5513187BEA1C0036AFA8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81D5512187BEA1C0036AFA8 /* CoreGraphics.framework */; };
 		F81D5515187BEA1C0036AFA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81D5514187BEA1C0036AFA8 /* UIKit.framework */; };
@@ -45,6 +50,14 @@
 /* Begin PBXFileReference section */
 		007A144E187E5BDA00E536CE /* Catalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Catalog.h; sourceTree = "<group>"; };
 		007A144F187E5BDA00E536CE /* Catalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Catalog.m; sourceTree = "<group>"; };
+		007A1451187E6F2400E536CE /* Cart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cart.h; sourceTree = "<group>"; };
+		007A1452187E6F2400E536CE /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cart.m; sourceTree = "<group>"; };
+		007A1457187E728200E536CE /* CartItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartItem.h; sourceTree = "<group>"; };
+		007A1458187E728200E536CE /* CartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartItem.m; sourceTree = "<group>"; };
+		007A145D187E743E00E536CE /* CartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartCell.h; sourceTree = "<group>"; };
+		007A145E187E743E00E536CE /* CartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartCell.m; sourceTree = "<group>"; };
+		007A1464187E949B00E536CE /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = "<group>"; };
+		007A1465187E949B00E536CE /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		F81D550D187BEA1C0036AFA8 /* CustomCellTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCellTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F81D5510187BEA1C0036AFA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F81D5512187BEA1C0036AFA8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -134,12 +147,16 @@
 		F81D5516187BEA1C0036AFA8 /* CustomCellTest */ = {
 			isa = PBXGroup;
 			children = (
+				007A1464187E949B00E536CE /* minus.png */,
+				007A1465187E949B00E536CE /* plus.png */,
 				F81D55B2187C09CB0036AFA8 /* cart.png */,
 				F81D559B187BFE640036AFA8 /* baseball.png */,
 				F81D5589187BF6B80036AFA8 /* volleyball.png */,
 				F81D558A187BF6B80036AFA8 /* rugbyball.png */,
 				F81D558C187BF6B80036AFA8 /* basketball.png */,
 				F81D558D187BF6B80036AFA8 /* football.png */,
+				007A144E187E5BDA00E536CE /* Catalog.h */,
+				007A144F187E5BDA00E536CE /* Catalog.m */,
 				F81D5593187BF7CB0036AFA8 /* Product.h */,
 				F81D5594187BF7CB0036AFA8 /* Product.m */,
 				F81D5596187BF8930036AFA8 /* ProductCell.h */,
@@ -152,8 +169,12 @@
 				F81D5526187BEA1C0036AFA8 /* ViewController.m */,
 				F81D5528187BEA1C0036AFA8 /* Images.xcassets */,
 				F81D5517187BEA1C0036AFA8 /* Supporting Files */,
-				007A144E187E5BDA00E536CE /* Catalog.h */,
-				007A144F187E5BDA00E536CE /* Catalog.m */,
+				007A1451187E6F2400E536CE /* Cart.h */,
+				007A1452187E6F2400E536CE /* Cart.m */,
+				007A1457187E728200E536CE /* CartItem.h */,
+				007A1458187E728200E536CE /* CartItem.m */,
+				007A145D187E743E00E536CE /* CartCell.h */,
+				007A145E187E743E00E536CE /* CartCell.m */,
 			);
 			path = CustomCellTest;
 			sourceTree = "<group>";
@@ -271,6 +292,8 @@
 				F81D5591187BF6B80036AFA8 /* basketball.png in Resources */,
 				F81D559C187BFE640036AFA8 /* baseball.png in Resources */,
 				F81D5524187BEA1C0036AFA8 /* Main.storyboard in Resources */,
+				007A1467187E949B00E536CE /* plus.png in Resources */,
+				007A1466187E949B00E536CE /* minus.png in Resources */,
 				F81D558E187BF6B80036AFA8 /* volleyball.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,11 +313,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007A145F187E743E00E536CE /* CartCell.m in Sources */,
+				007A1453187E6F2400E536CE /* Cart.m in Sources */,
 				F81D5598187BF8930036AFA8 /* ProductCell.m in Sources */,
 				F81D5527187BEA1C0036AFA8 /* ViewController.m in Sources */,
 				F81D5595187BF7CB0036AFA8 /* Product.m in Sources */,
 				F81D5521187BEA1C0036AFA8 /* AppDelegate.m in Sources */,
 				F81D551D187BEA1C0036AFA8 /* main.m in Sources */,
+				007A1459187E728200E536CE /* CartItem.m in Sources */,
 				007A1450187E5BDA00E536CE /* Catalog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

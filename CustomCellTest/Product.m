@@ -10,11 +10,22 @@
 
 @implementation Product
 
-+ (id)product:(NSString *)name price:(NSString *)price image:(NSString *)image {
++ (id)productWithName:(NSString *)name withPrice:(NSString *)price withImage:(NSString *)image {
     Product *item = [[Product alloc] init];
     item.name = name;
     item.price = price;
     item.imageName = image;
     return item;
+}
++ (id)productWithName:(NSString *)name code:(NSString *)code price:(NSString *)price image:(NSString *)image {
+    Product *item = [[Product alloc] init];
+    item.name = name;
+    item.code = code;
+    item.price = price;
+    item.imageName = image;
+    return item;
+}
+- (BOOL)isEqualToProduct:(NSString *)productCode {
+    return [self.code isEqualToString:productCode];
 }
 @end

@@ -11,14 +11,13 @@
 #import "Catalog.h"
 #import "Product.h"
 #import "CartDelegate.h"
+#import "Cart.h"
+#import "CartCell.h"
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate, CartDelegate> {
-    NSMutableArray *cartItems;
-//    NSArray *data;
-//    NSMutableArray *cart;
 }
 @property (weak, nonatomic) IBOutlet UITableView *table;
-
+@property (strong, nonatomic) Cart *cart;
 @end
 
 @implementation ViewController
@@ -28,20 +27,25 @@
     NSIndexPath *indexPath = [self.table indexPathForCell:sender];
     Product *product = [[Catalog defaultCatalog] productAt:indexPath.row];
     
-    [cartItems addObject:product];
+    // 핵심
+    [self.cart addProduct:product];
+    
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:1];
     [self.table reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
-//    // 제품 찾기 - 셀 객체로 indexPath 얻기
-//    UITableViewCell *cell = (UITableViewCell *)sender;
-//    NSIndexPath *indexPath = [self.table indexPathForCell:cell];
-//    Product *item = data[indexPath.row];
-//    
-//    // 카드에 상품 추가
-//    [cart addObject:item];
-//    
-//    // 테이블 카트 섹션 리로드
-//    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:1];
-//    [self.table reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+- (void)incQuantity:(NSString *)productCode {
+    [self.cart incQuantity:productCode];
+    
+    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:1];
+    [self.table reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+- (void)decQuantity:(NSString *)productCode {
+    [self.cart decQuantity:productCode];
+    
+    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:1];
+    [self.table reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 // UITableViewDataSource
@@ -52,11 +56,9 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (0 == section) {
         return [[Catalog defaultCatalog] numberOfProducts];
-//        return [data count];
     }
     else {
-        return [cartItems count];
-//        return [cart count];
+        return self.cart.items.count;
     }
 }
 
@@ -74,9 +76,10 @@
         return cell;
     }
     else {
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CART_CELL" forIndexPath:indexPath];
-        Product *product = cartItems[indexPath.row];
-        cell.textLabel.text = product.name;
+        CartCell *cell = (CartCell *)[tableView dequeueReusableCellWithIdentifier:@"CART_CELL" forIndexPath:indexPath];
+        cell.delegate = self;
+        CartItem *cartItem = self.cart.items[indexPath.row];
+        [cell setCartItem:cartItem];
         return cell;
     }
 }
@@ -84,7 +87,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    cartItems = [[NSMutableArray alloc] init];
+    self.cart = [[Cart alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
