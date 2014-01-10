@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Product;
 
 @interface Catalog : NSObject
 + (id)defaultCatalog;
 
 - (id)productAt:(NSInteger)index;
 - (NSInteger)numberOfProducts;
+- (Product *)productWithCode:(NSString *)productCode;
 @end

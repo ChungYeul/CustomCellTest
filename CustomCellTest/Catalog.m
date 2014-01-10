@@ -42,4 +42,12 @@ static Catalog *_instance = nil;
 - (NSInteger)numberOfProducts {
     return [_data count];
 }
+- (Product *)productWithCode:(NSString *)productCode {
+    for (Product *one in _data) {
+        if ([one isEqualToProduct:productCode]) {
+            return one;
+        }
+    }
+    return nil;
+}
 @end

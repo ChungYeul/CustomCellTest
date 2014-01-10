@@ -13,7 +13,7 @@
 #import "CartDelegate.h"
 #import "Cart.h"
 #import "CartCell.h"
-
+#import "ProductDetailViewController.h"
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate, CartDelegate> {
 }
 @property (weak, nonatomic) IBOutlet UITableView *table;
@@ -82,6 +82,21 @@
         [cell setCartItem:cartItem];
         return cell;
     }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    ProductDetailViewController *detailVC = segue.destinationViewController;
+    
+    NSIndexPath *indexPath = [self.table indexPathForCell:sender];
+    Product *selectedProduct = [[Catalog defaultCatalog] productAt:indexPath.row];
+    detailVC.productCode = selectedProduct.code;
+}
+- (void)viewWillAppear:(BOOL)animated {
+    self.navigationController.navigationBarHidden = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    self.navigationController.navigationBarHidden = NO;
 }
 
 - (void)viewDidLoad

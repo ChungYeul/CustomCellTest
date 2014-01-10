@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0014AA9B187FDBC7004B650C /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0014AA9A187FDBC7004B650C /* ProductDetailViewController.m */; };
 		007A1450187E5BDA00E536CE /* Catalog.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A144F187E5BDA00E536CE /* Catalog.m */; };
 		007A1453187E6F2400E536CE /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A1452187E6F2400E536CE /* Cart.m */; };
 		007A1459187E728200E536CE /* CartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A1458187E728200E536CE /* CartItem.m */; };
@@ -48,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0014AA99187FDBC7004B650C /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
+		0014AA9A187FDBC7004B650C /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
 		007A144E187E5BDA00E536CE /* Catalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Catalog.h; sourceTree = "<group>"; };
 		007A144F187E5BDA00E536CE /* Catalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Catalog.m; sourceTree = "<group>"; };
 		007A1451187E6F2400E536CE /* Cart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cart.h; sourceTree = "<group>"; };
@@ -114,6 +117,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0014AA96187FDB6B004B650C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				007A1464187E949B00E536CE /* minus.png */,
+				007A1465187E949B00E536CE /* plus.png */,
+				F81D55B2187C09CB0036AFA8 /* cart.png */,
+				F81D559B187BFE640036AFA8 /* baseball.png */,
+				F81D5589187BF6B80036AFA8 /* volleyball.png */,
+				F81D558A187BF6B80036AFA8 /* rugbyball.png */,
+				F81D558C187BF6B80036AFA8 /* basketball.png */,
+				F81D558D187BF6B80036AFA8 /* football.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		0014AA97187FDB75004B650C /* product */ = {
+			isa = PBXGroup;
+			children = (
+				F81D5593187BF7CB0036AFA8 /* Product.h */,
+				F81D5594187BF7CB0036AFA8 /* Product.m */,
+				F81D5596187BF8930036AFA8 /* ProductCell.h */,
+				F81D5597187BF8930036AFA8 /* ProductCell.m */,
+			);
+			name = product;
+			sourceTree = "<group>";
+		};
+		0014AA98187FDBA1004B650C /* cart */ = {
+			isa = PBXGroup;
+			children = (
+				007A1451187E6F2400E536CE /* Cart.h */,
+				007A1452187E6F2400E536CE /* Cart.m */,
+				007A1457187E728200E536CE /* CartItem.h */,
+				007A1458187E728200E536CE /* CartItem.m */,
+				007A145D187E743E00E536CE /* CartCell.h */,
+				007A145E187E743E00E536CE /* CartCell.m */,
+			);
+			name = cart;
+			sourceTree = "<group>";
+		};
 		F81D5504187BEA1C0036AFA8 = {
 			isa = PBXGroup;
 			children = (
@@ -147,34 +189,21 @@
 		F81D5516187BEA1C0036AFA8 /* CustomCellTest */ = {
 			isa = PBXGroup;
 			children = (
-				007A1464187E949B00E536CE /* minus.png */,
-				007A1465187E949B00E536CE /* plus.png */,
-				F81D55B2187C09CB0036AFA8 /* cart.png */,
-				F81D559B187BFE640036AFA8 /* baseball.png */,
-				F81D5589187BF6B80036AFA8 /* volleyball.png */,
-				F81D558A187BF6B80036AFA8 /* rugbyball.png */,
-				F81D558C187BF6B80036AFA8 /* basketball.png */,
-				F81D558D187BF6B80036AFA8 /* football.png */,
+				0014AA96187FDB6B004B650C /* images */,
+				0014AA98187FDBA1004B650C /* cart */,
+				0014AA97187FDB75004B650C /* product */,
 				007A144E187E5BDA00E536CE /* Catalog.h */,
 				007A144F187E5BDA00E536CE /* Catalog.m */,
-				F81D5593187BF7CB0036AFA8 /* Product.h */,
-				F81D5594187BF7CB0036AFA8 /* Product.m */,
-				F81D5596187BF8930036AFA8 /* ProductCell.h */,
-				F81D5597187BF8930036AFA8 /* ProductCell.m */,
 				F81D55AF187C04230036AFA8 /* CartDelegate.h */,
 				F81D551F187BEA1C0036AFA8 /* AppDelegate.h */,
 				F81D5520187BEA1C0036AFA8 /* AppDelegate.m */,
 				F81D5522187BEA1C0036AFA8 /* Main.storyboard */,
 				F81D5525187BEA1C0036AFA8 /* ViewController.h */,
 				F81D5526187BEA1C0036AFA8 /* ViewController.m */,
+				0014AA99187FDBC7004B650C /* ProductDetailViewController.h */,
+				0014AA9A187FDBC7004B650C /* ProductDetailViewController.m */,
 				F81D5528187BEA1C0036AFA8 /* Images.xcassets */,
 				F81D5517187BEA1C0036AFA8 /* Supporting Files */,
-				007A1451187E6F2400E536CE /* Cart.h */,
-				007A1452187E6F2400E536CE /* Cart.m */,
-				007A1457187E728200E536CE /* CartItem.h */,
-				007A1458187E728200E536CE /* CartItem.m */,
-				007A145D187E743E00E536CE /* CartCell.h */,
-				007A145E187E743E00E536CE /* CartCell.m */,
 			);
 			path = CustomCellTest;
 			sourceTree = "<group>";
@@ -314,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				007A145F187E743E00E536CE /* CartCell.m in Sources */,
+				0014AA9B187FDBC7004B650C /* ProductDetailViewController.m in Sources */,
 				007A1453187E6F2400E536CE /* Cart.m in Sources */,
 				F81D5598187BF8930036AFA8 /* ProductCell.m in Sources */,
 				F81D5527187BEA1C0036AFA8 /* ViewController.m in Sources */,
