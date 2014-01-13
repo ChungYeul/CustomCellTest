@@ -324,8 +324,6 @@
     <resources>
         <image name="cart.png" width="28" height="28"/>
         <image name="minus.png" width="28" height="28"/>
-        <image name="minus.png" width="28" height="28"/>
-        <image name="plus.png" width="31" height="31"/>
         <image name="plus.png" width="31" height="31"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

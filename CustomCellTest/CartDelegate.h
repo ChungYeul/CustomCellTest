@@ -9,14 +9,14 @@
 #import <Foundation/Foundation.h>
 
 @protocol CartDelegate <NSObject>
-@optional
+//@optional
 - (void)addItem:(id)sender;
-- (void)incQuantity:(NSString *)productCode;
-- (void)decQuantity:(NSString *)productCode;
+//- (void)incQuantity:(NSString *)productCode;
+//- (void)decQuantity:(NSString *)productCode;
 @end
 
 //
-//@protocol CartCellDelegate <NSObject>
-//- (void)incQuantity:(NSString *)productCode;
-//- (void)decQuantity:(NSString *)productCode;
-//@end
+@protocol CartCellDelegate <NSObject>
+- (void)incQuantity:(NSString *)productCode;
+- (void)decQuantity:(NSString *)productCode;
+@end

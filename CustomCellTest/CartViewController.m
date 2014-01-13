@@ -10,7 +10,7 @@
 #import "CartDelegate.h"
 #import "Cart.h"
 #import "CartCell.h"
-@interface CartViewController ()<UITableViewDataSource, UITableViewDelegate, CartDelegate>
+@interface CartViewController ()<UITableViewDataSource, UITableViewDelegate, CartCellDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *table;
 
 @end
