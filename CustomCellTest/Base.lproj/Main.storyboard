@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="w5m-4k-cO1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="aYF-05-p60">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
@@ -13,11 +13,11 @@
                         <viewControllerLayoutGuide type="bottom" id="iSZ-nr-z6Q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="EBd-5O-X2j">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -61,7 +61,7 @@
                                             <outlet property="productImage" destination="jzB-0h-XtE" id="VcX-gC-NRT"/>
                                             <outlet property="productName" destination="1Td-UY-Er0" id="mie-uT-sxc"/>
                                             <outlet property="productPrice" destination="gNj-2e-bWm" id="Bsz-nw-5lT"/>
-                                            <segue destination="fR7-uH-LmS" kind="push" id="xav-La-xPb"/>
+                                            <segue destination="fR7-uH-LmS" kind="push" id="x9s-Hu-kZl"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CART_CELL" id="KHk-Fb-F3W" customClass="CartCell">
@@ -129,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="742" y="-222"/>
+            <point key="canvasLocation" x="1271" y="-222"/>
         </scene>
         <!--Product Detail View Controller-->
         <scene sceneID="uWP-X1-fIG">
@@ -140,7 +140,7 @@
                         <viewControllerLayoutGuide type="bottom" id="6Ga-gl-Id7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9qa-61-fjm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="제품명" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sg-CF-Q0w">
@@ -197,30 +197,135 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eqo-m2-wrG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749" y="448"/>
+            <point key="canvasLocation" x="1756" y="-222"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="4Ct-qd-jnR">
+        <!--Cart View Controller - Cart-->
+        <scene sceneID="OP5-xX-Unf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w5m-4k-cO1" sceneMemberID="viewController">
+                <viewController id="WH6-f6-tsH" customClass="CartViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zQS-nN-S1E"/>
+                        <viewControllerLayoutGuide type="bottom" id="dFJ-Ma-9BX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9MA-vI-Eio">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="bFl-aQ-ZaR">
+                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CART_CELL" id="hyE-4v-UMZ" customClass="CartCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hyE-4v-UMZ" id="MCs-lZ-RFe">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjD-mM-EeQ">
+                                                    <rect key="frame" x="20" y="11" width="86" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P59-Uc-86T">
+                                                    <rect key="frame" x="159" y="11" width="59" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7u-BA-vJc">
+                                                    <rect key="frame" x="233" y="7" width="31" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="plus.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="plusClicked:" destination="hyE-4v-UMZ" eventType="touchUpInside" id="dg2-V1-cR4"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdw-z9-f5r">
+                                                    <rect key="frame" x="272" y="7" width="28" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="minus.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="minusClicked:" destination="hyE-4v-UMZ" eventType="touchUpInside" id="KhX-0v-1mH"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cartName" destination="DjD-mM-EeQ" id="Gk1-F1-NfC"/>
+                                            <outlet property="cartQuantity" destination="P59-Uc-86T" id="ig2-nz-CLV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="WH6-f6-tsH" id="655-DU-DJC"/>
+                                    <outlet property="delegate" destination="WH6-f6-tsH" id="PgE-fo-kEL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cart" id="Dvt-IV-8pP"/>
+                    <connections>
+                        <outlet property="table" destination="bFl-aQ-ZaR" id="L2r-eM-Eyb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8PV-Jv-DON" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="745" y="448"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ZQJ-uz-AqG">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="aYF-05-p60" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cLL-zy-7AG">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="fVJ-gQ-N9W">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="uxD-2X-O43" kind="relationship" relationship="viewControllers" id="aoX-qF-tSe"/>
+                        <segue destination="WH6-f6-tsH" kind="relationship" relationship="viewControllers" id="PrE-ZF-6zI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hcB-Wl-6nA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216" y="-222"/>
+        </scene>
+        <!--Navigation Controller - Catalog-->
+        <scene sceneID="cWl-yr-17B">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uxD-2X-O43" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Catalog" id="kWe-tM-LZS"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bfw-Y9-U0l">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="nWT-Bs-grm"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="dJJ-aZ-r8V"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OLJ-00-lc6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CpX-07-AbK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="216" y="-222"/>
+            <point key="canvasLocation" x="745" y="-222"/>
         </scene>
     </scenes>
     <resources>
         <image name="cart.png" width="28" height="28"/>
         <image name="minus.png" width="28" height="28"/>
+        <image name="minus.png" width="28" height="28"/>
+        <image name="plus.png" width="31" height="31"/>
         <image name="plus.png" width="31" height="31"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

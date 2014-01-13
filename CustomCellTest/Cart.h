@@ -11,6 +11,9 @@
 @class CartItem;
 
 @interface Cart : NSObject
++ (Cart *)defaultCart;
+- (NSInteger)numberOfItems;
+-(CartItem *)cartItemAtIndex:(NSInteger)index;
 - (void)addProduct:(Product *)item;
 - (void)incQuantity:(NSString *)productCoed;
 - (void)decQuantity:(NSString *)productCoed;

@@ -11,6 +11,19 @@
 #import "CartItem.h"
 
 @implementation Cart
+static Cart *cart = nil;
++ (Cart *)defaultCart {
+    if (nil == cart) {
+        cart = [[Cart alloc] init];
+    }
+    return cart;
+}
+- (NSInteger)numberOfItems {
+    return [self.items count];
+}
+-(CartItem *)cartItemAtIndex:(NSInteger)index {
+    return [self.items objectAtIndex:index];
+}
 - (id)init {
     self = [super init];
     if (self) {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0014AA9B187FDBC7004B650C /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0014AA9A187FDBC7004B650C /* ProductDetailViewController.m */; };
+		00283D6E18838583004FB5AE /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00283D6D18838583004FB5AE /* CartViewController.m */; };
 		007A1450187E5BDA00E536CE /* Catalog.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A144F187E5BDA00E536CE /* Catalog.m */; };
 		007A1453187E6F2400E536CE /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A1452187E6F2400E536CE /* Cart.m */; };
 		007A1459187E728200E536CE /* CartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A1458187E728200E536CE /* CartItem.m */; };
@@ -51,6 +52,8 @@
 /* Begin PBXFileReference section */
 		0014AA99187FDBC7004B650C /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
 		0014AA9A187FDBC7004B650C /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
+		00283D6C18838583004FB5AE /* CartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
+		00283D6D18838583004FB5AE /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
 		007A144E187E5BDA00E536CE /* Catalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Catalog.h; sourceTree = "<group>"; };
 		007A144F187E5BDA00E536CE /* Catalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Catalog.m; sourceTree = "<group>"; };
 		007A1451187E6F2400E536CE /* Cart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cart.h; sourceTree = "<group>"; };
@@ -202,6 +205,8 @@
 				F81D5526187BEA1C0036AFA8 /* ViewController.m */,
 				0014AA99187FDBC7004B650C /* ProductDetailViewController.h */,
 				0014AA9A187FDBC7004B650C /* ProductDetailViewController.m */,
+				00283D6C18838583004FB5AE /* CartViewController.h */,
+				00283D6D18838583004FB5AE /* CartViewController.m */,
 				F81D5528187BEA1C0036AFA8 /* Images.xcassets */,
 				F81D5517187BEA1C0036AFA8 /* Supporting Files */,
 			);
@@ -346,6 +351,7 @@
 				0014AA9B187FDBC7004B650C /* ProductDetailViewController.m in Sources */,
 				007A1453187E6F2400E536CE /* Cart.m in Sources */,
 				F81D5598187BF8930036AFA8 /* ProductCell.m in Sources */,
+				00283D6E18838583004FB5AE /* CartViewController.m in Sources */,
 				F81D5527187BEA1C0036AFA8 /* ViewController.m in Sources */,
 				F81D5595187BF7CB0036AFA8 /* Product.m in Sources */,
 				F81D5521187BEA1C0036AFA8 /* AppDelegate.m in Sources */,
